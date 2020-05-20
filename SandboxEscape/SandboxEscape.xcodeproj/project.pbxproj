@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49905BF323D5C5BD00E46104 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49905BF223D5C5BD00E46104 /* AppDelegate.m */; };
+		49905BF623D5C5BD00E46104 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49905BF523D5C5BD00E46104 /* ViewController.m */; };
+		49905BF823D5C5C000E46104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49905BF723D5C5C000E46104 /* Assets.xcassets */; };
+		49905BFB23D5C5C000E46104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49905BF923D5C5C000E46104 /* Main.storyboard */; };
+		49905C0923D5C5C000E46104 /* SandboxEscapeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49905C0823D5C5C000E46104 /* SandboxEscapeTests.m */; };
+		49905C1423D5C5C100E46104 /* SandboxEscapeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49905C1323D5C5C100E46104 /* SandboxEscapeUITests.m */; };
+		49905C3223D5CAF500E46104 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49905BFD23D5C5C000E46104 /* main.m */; };
+		49905C4E23D5CEF700E46104 /* secinit_interpose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49905C4523D5CEF700E46104 /* secinit_interpose.framework */; };
+		49905C5523D5CEF700E46104 /* secinit_interposeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49905C5423D5CEF700E46104 /* secinit_interposeTests.m */; };
+		49905C5723D5CEF700E46104 /* secinit_interpose.h in Headers */ = {isa = PBXBuildFile; fileRef = 49905C4723D5CEF700E46104 /* secinit_interpose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49905C5A23D5CEF700E46104 /* secinit_interpose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49905C4523D5CEF700E46104 /* secinit_interpose.framework */; };
+		49905C5B23D5CEF700E46104 /* secinit_interpose.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 49905C4523D5CEF700E46104 /* secinit_interpose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49905C6323D5CF0B00E46104 /* secinit_interpose.c in Sources */ = {isa = PBXBuildFile; fileRef = 49905C6223D5CF0B00E46104 /* secinit_interpose.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49905C0523D5C5C000E46104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49905BE623D5C5BD00E46104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49905BED23D5C5BD00E46104;
+			remoteInfo = SandboxEscape;
+		};
+		49905C1023D5C5C100E46104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49905BE623D5C5BD00E46104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49905BED23D5C5BD00E46104;
+			remoteInfo = SandboxEscape;
+		};
+		49905C4F23D5CEF700E46104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49905BE623D5C5BD00E46104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49905C4423D5CEF700E46104;
+			remoteInfo = secinit_interpose;
+		};
+		49905C5123D5CEF700E46104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49905BE623D5C5BD00E46104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49905BED23D5C5BD00E46104;
+			remoteInfo = SandboxEscape;
+		};
+		49905C5823D5CEF700E46104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49905BE623D5C5BD00E46104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49905C4423D5CEF700E46104;
+			remoteInfo = secinit_interpose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49905C3123D5C9FC00E46104 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49905C5B23D5CEF700E46104 /* secinit_interpose.framework in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		49905BEE23D5C5BD00E46104 /* SandboxEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49905BF123D5C5BD00E46104 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49905BF223D5C5BD00E46104 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49905BF423D5C5BD00E46104 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49905BF523D5C5BD00E46104 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49905BF723D5C5C000E46104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49905BFA23D5C5C000E46104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49905BFC23D5C5C000E46104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49905BFD23D5C5C000E46104 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49905BFF23D5C5C000E46104 /* SandboxEscape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SandboxEscape.entitlements; sourceTree = "<group>"; };
+		49905C0423D5C5C000E46104 /* SandboxEscapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandboxEscapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49905C0823D5C5C000E46104 /* SandboxEscapeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxEscapeTests.m; sourceTree = "<group>"; };
+		49905C0A23D5C5C000E46104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49905C0F23D5C5C100E46104 /* SandboxEscapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandboxEscapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49905C1323D5C5C100E46104 /* SandboxEscapeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxEscapeUITests.m; sourceTree = "<group>"; };
+		49905C1523D5C5C100E46104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49905C4523D5CEF700E46104 /* secinit_interpose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = secinit_interpose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49905C4723D5CEF700E46104 /* secinit_interpose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secinit_interpose.h; sourceTree = "<group>"; };
+		49905C4823D5CEF700E46104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49905C4D23D5CEF700E46104 /* secinit_interposeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secinit_interposeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49905C5423D5CEF700E46104 /* secinit_interposeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = secinit_interposeTests.m; sourceTree = "<group>"; };
+		49905C5623D5CEF700E46104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49905C6223D5CF0B00E46104 /* secinit_interpose.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = secinit_interpose.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49905BEB23D5C5BD00E46104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C5A23D5CEF700E46104 /* secinit_interpose.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C0123D5C5C000E46104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C0C23D5C5C100E46104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C4223D5CEF700E46104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C4A23D5CEF700E46104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C4E23D5CEF700E46104 /* secinit_interpose.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49905BE523D5C5BD00E46104 = {
+			isa = PBXGroup;
+			children = (
+				49905BF023D5C5BD00E46104 /* SandboxEscape */,
+				49905C0723D5C5C000E46104 /* SandboxEscapeTests */,
+				49905C1223D5C5C100E46104 /* SandboxEscapeUITests */,
+				49905C4623D5CEF700E46104 /* secinit_interpose */,
+				49905C5323D5CEF700E46104 /* secinit_interposeTests */,
+				49905BEF23D5C5BD00E46104 /* Products */,
+				49905C2C23D5C9FC00E46104 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49905BEF23D5C5BD00E46104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49905BEE23D5C5BD00E46104 /* SandboxEscape.app */,
+				49905C0423D5C5C000E46104 /* SandboxEscapeTests.xctest */,
+				49905C0F23D5C5C100E46104 /* SandboxEscapeUITests.xctest */,
+				49905C4523D5CEF700E46104 /* secinit_interpose.framework */,
+				49905C4D23D5CEF700E46104 /* secinit_interposeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49905BF023D5C5BD00E46104 /* SandboxEscape */ = {
+			isa = PBXGroup;
+			children = (
+				49905BF123D5C5BD00E46104 /* AppDelegate.h */,
+				49905BF223D5C5BD00E46104 /* AppDelegate.m */,
+				49905BF423D5C5BD00E46104 /* ViewController.h */,
+				49905BF523D5C5BD00E46104 /* ViewController.m */,
+				49905BF723D5C5C000E46104 /* Assets.xcassets */,
+				49905BF923D5C5C000E46104 /* Main.storyboard */,
+				49905BFC23D5C5C000E46104 /* Info.plist */,
+				49905BFD23D5C5C000E46104 /* main.m */,
+				49905BFF23D5C5C000E46104 /* SandboxEscape.entitlements */,
+			);
+			path = SandboxEscape;
+			sourceTree = "<group>";
+		};
+		49905C0723D5C5C000E46104 /* SandboxEscapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				49905C0823D5C5C000E46104 /* SandboxEscapeTests.m */,
+				49905C0A23D5C5C000E46104 /* Info.plist */,
+			);
+			path = SandboxEscapeTests;
+			sourceTree = "<group>";
+		};
+		49905C1223D5C5C100E46104 /* SandboxEscapeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49905C1323D5C5C100E46104 /* SandboxEscapeUITests.m */,
+				49905C1523D5C5C100E46104 /* Info.plist */,
+			);
+			path = SandboxEscapeUITests;
+			sourceTree = "<group>";
+		};
+		49905C2C23D5C9FC00E46104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49905C4623D5CEF700E46104 /* secinit_interpose */ = {
+			isa = PBXGroup;
+			children = (
+				49905C4723D5CEF700E46104 /* secinit_interpose.h */,
+				49905C6223D5CF0B00E46104 /* secinit_interpose.c */,
+				49905C4823D5CEF700E46104 /* Info.plist */,
+			);
+			path = secinit_interpose;
+			sourceTree = "<group>";
+		};
+		49905C5323D5CEF700E46104 /* secinit_interposeTests */ = {
+			isa = PBXGroup;
+			children = (
+				49905C5423D5CEF700E46104 /* secinit_interposeTests.m */,
+				49905C5623D5CEF700E46104 /* Info.plist */,
+			);
+			path = secinit_interposeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		49905C4023D5CEF700E46104 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C5723D5CEF700E46104 /* secinit_interpose.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		49905BED23D5C5BD00E46104 /* SandboxEscape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49905C1823D5C5C100E46104 /* Build configuration list for PBXNativeTarget "SandboxEscape" */;
+			buildPhases = (
+				49905BEA23D5C5BD00E46104 /* Sources */,
+				49905BEB23D5C5BD00E46104 /* Frameworks */,
+				49905BEC23D5C5BD00E46104 /* Resources */,
+				49905C3123D5C9FC00E46104 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49905C5923D5CEF700E46104 /* PBXTargetDependency */,
+			);
+			name = SandboxEscape;
+			productName = SandboxEscape;
+			productReference = 49905BEE23D5C5BD00E46104 /* SandboxEscape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49905C0323D5C5C000E46104 /* SandboxEscapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49905C1B23D5C5C100E46104 /* Build configuration list for PBXNativeTarget "SandboxEscapeTests" */;
+			buildPhases = (
+				49905C0023D5C5C000E46104 /* Sources */,
+				49905C0123D5C5C000E46104 /* Frameworks */,
+				49905C0223D5C5C000E46104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49905C0623D5C5C000E46104 /* PBXTargetDependency */,
+			);
+			name = SandboxEscapeTests;
+			productName = SandboxEscapeTests;
+			productReference = 49905C0423D5C5C000E46104 /* SandboxEscapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49905C0E23D5C5C100E46104 /* SandboxEscapeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49905C1E23D5C5C100E46104 /* Build configuration list for PBXNativeTarget "SandboxEscapeUITests" */;
+			buildPhases = (
+				49905C0B23D5C5C100E46104 /* Sources */,
+				49905C0C23D5C5C100E46104 /* Frameworks */,
+				49905C0D23D5C5C100E46104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49905C1123D5C5C100E46104 /* PBXTargetDependency */,
+			);
+			name = SandboxEscapeUITests;
+			productName = SandboxEscapeUITests;
+			productReference = 49905C0F23D5C5C100E46104 /* SandboxEscapeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		49905C4423D5CEF700E46104 /* secinit_interpose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49905C5C23D5CEF700E46104 /* Build configuration list for PBXNativeTarget "secinit_interpose" */;
+			buildPhases = (
+				49905C4023D5CEF700E46104 /* Headers */,
+				49905C4123D5CEF700E46104 /* Sources */,
+				49905C4223D5CEF700E46104 /* Frameworks */,
+				49905C4323D5CEF700E46104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secinit_interpose;
+			productName = secinit_interpose;
+			productReference = 49905C4523D5CEF700E46104 /* secinit_interpose.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		49905C4C23D5CEF700E46104 /* secinit_interposeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49905C5F23D5CEF700E46104 /* Build configuration list for PBXNativeTarget "secinit_interposeTests" */;
+			buildPhases = (
+				49905C4923D5CEF700E46104 /* Sources */,
+				49905C4A23D5CEF700E46104 /* Frameworks */,
+				49905C4B23D5CEF700E46104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49905C5023D5CEF700E46104 /* PBXTargetDependency */,
+				49905C5223D5CEF700E46104 /* PBXTargetDependency */,
+			);
+			name = secinit_interposeTests;
+			productName = secinit_interposeTests;
+			productReference = 49905C4D23D5CEF700E46104 /* secinit_interposeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49905BE623D5C5BD00E46104 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Saagar Jha";
+				TargetAttributes = {
+					49905BED23D5C5BD00E46104 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					49905C0323D5C5C000E46104 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 49905BED23D5C5BD00E46104;
+					};
+					49905C0E23D5C5C100E46104 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 49905BED23D5C5BD00E46104;
+					};
+					49905C4423D5CEF700E46104 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					49905C4C23D5CEF700E46104 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 49905BED23D5C5BD00E46104;
+					};
+				};
+			};
+			buildConfigurationList = 49905BE923D5C5BD00E46104 /* Build configuration list for PBXProject "SandboxEscape" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49905BE523D5C5BD00E46104;
+			productRefGroup = 49905BEF23D5C5BD00E46104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49905BED23D5C5BD00E46104 /* SandboxEscape */,
+				49905C0323D5C5C000E46104 /* SandboxEscapeTests */,
+				49905C0E23D5C5C100E46104 /* SandboxEscapeUITests */,
+				49905C4423D5CEF700E46104 /* secinit_interpose */,
+				49905C4C23D5CEF700E46104 /* secinit_interposeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49905BEC23D5C5BD00E46104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905BF823D5C5C000E46104 /* Assets.xcassets in Resources */,
+				49905BFB23D5C5C000E46104 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C0223D5C5C000E46104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C0D23D5C5C100E46104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C4323D5CEF700E46104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C4B23D5CEF700E46104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49905BEA23D5C5BD00E46104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C3223D5CAF500E46104 /* main.m in Sources */,
+				49905BF623D5C5BD00E46104 /* ViewController.m in Sources */,
+				49905BF323D5C5BD00E46104 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C0023D5C5C000E46104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C0923D5C5C000E46104 /* SandboxEscapeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C0B23D5C5C100E46104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C1423D5C5C100E46104 /* SandboxEscapeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C4123D5CEF700E46104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C6323D5CF0B00E46104 /* secinit_interpose.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49905C4923D5CEF700E46104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49905C5523D5CEF700E46104 /* secinit_interposeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49905C0623D5C5C000E46104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49905BED23D5C5BD00E46104 /* SandboxEscape */;
+			targetProxy = 49905C0523D5C5C000E46104 /* PBXContainerItemProxy */;
+		};
+		49905C1123D5C5C100E46104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49905BED23D5C5BD00E46104 /* SandboxEscape */;
+			targetProxy = 49905C1023D5C5C100E46104 /* PBXContainerItemProxy */;
+		};
+		49905C5023D5CEF700E46104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49905C4423D5CEF700E46104 /* secinit_interpose */;
+			targetProxy = 49905C4F23D5CEF700E46104 /* PBXContainerItemProxy */;
+		};
+		49905C5223D5CEF700E46104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49905BED23D5C5BD00E46104 /* SandboxEscape */;
+			targetProxy = 49905C5123D5CEF700E46104 /* PBXContainerItemProxy */;
+		};
+		49905C5923D5CEF700E46104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49905C4423D5CEF700E46104 /* secinit_interpose */;
+			targetProxy = 49905C5823D5CEF700E46104 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49905BF923D5C5C000E46104 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49905BFA23D5C5C000E46104 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49905C1623D5C5C100E46104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		49905C1723D5C5C100E46104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49905C1923D5C5C100E46104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SandboxEscape/SandboxEscape.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SandboxEscape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SandboxEscape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49905C1A23D5C5C100E46104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SandboxEscape/SandboxEscape.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SandboxEscape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SandboxEscape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49905C1C23D5C5C100E46104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = SandboxEscapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SandboxEscapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandboxEscape.app/Contents/MacOS/SandboxEscape";
+			};
+			name = Debug;
+		};
+		49905C1D23D5C5C100E46104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = SandboxEscapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SandboxEscapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandboxEscape.app/Contents/MacOS/SandboxEscape";
+			};
+			name = Release;
+		};
+		49905C1F23D5C5C100E46104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = SandboxEscapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SandboxEscapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SandboxEscape;
+			};
+			name = Debug;
+		};
+		49905C2023D5C5C100E46104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = SandboxEscapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.SandboxEscapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SandboxEscape;
+			};
+			name = Release;
+		};
+		49905C5D23D5CEF700E46104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = secinit_interpose/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saagarjha.secinit-interpose";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		49905C5E23D5CEF700E46104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = secinit_interpose/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saagarjha.secinit-interpose";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49905C6023D5CEF700E46104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = secinit_interposeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saagarjha.secinit-interposeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandboxEscape.app/Contents/MacOS/SandboxEscape";
+			};
+			name = Debug;
+		};
+		49905C6123D5CEF700E46104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = secinit_interposeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saagarjha.secinit-interposeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandboxEscape.app/Contents/MacOS/SandboxEscape";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49905BE923D5C5BD00E46104 /* Build configuration list for PBXProject "SandboxEscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49905C1623D5C5C100E46104 /* Debug */,
+				49905C1723D5C5C100E46104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49905C1823D5C5C100E46104 /* Build configuration list for PBXNativeTarget "SandboxEscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49905C1923D5C5C100E46104 /* Debug */,
+				49905C1A23D5C5C100E46104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49905C1B23D5C5C100E46104 /* Build configuration list for PBXNativeTarget "SandboxEscapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49905C1C23D5C5C100E46104 /* Debug */,
+				49905C1D23D5C5C100E46104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49905C1E23D5C5C100E46104 /* Build configuration list for PBXNativeTarget "SandboxEscapeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49905C1F23D5C5C100E46104 /* Debug */,
+				49905C2023D5C5C100E46104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49905C5C23D5CEF700E46104 /* Build configuration list for PBXNativeTarget "secinit_interpose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49905C5D23D5CEF700E46104 /* Debug */,
+				49905C5E23D5CEF700E46104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49905C5F23D5CEF700E46104 /* Build configuration list for PBXNativeTarget "secinit_interposeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49905C6023D5CEF700E46104 /* Debug */,
+				49905C6123D5CEF700E46104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49905BE623D5C5BD00E46104 /* Project object */;
+}
